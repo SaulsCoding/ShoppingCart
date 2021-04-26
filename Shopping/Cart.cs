@@ -32,7 +32,7 @@ namespace Shopping
 
             foreach(Item item in Items)
             {
-                builder.AppendLine(item.ItemName + " " + item.ItemPrice.ToString("N2"));//building a List of strings
+                builder.AppendLine(item.ItemName + " " + item.ItemPrice);//building a List of strings
                 //builderS += $"{item.ItemName} {item.ItemPrice}";
             }
             builder.AppendLine("Sub Total: " + " " + subTotal.ToString("N2"));

@@ -8,6 +8,7 @@ namespace Shopping
 {
     public class Calculation
     {
+
         public static decimal CalculateSubTotal(List<Item> calculationItems)
         {
             /*  decimal total = 0;
@@ -26,12 +27,15 @@ namespace Shopping
             }
             return total;
         }
+        
+    
 
         public static decimal CalculateWithVat(List<Item> calculationItems)
         {
             decimal subTotal = CalculateSubTotal(calculationItems);
             
              return subTotal * ((100 + Tax.VatAmount) / 100);
+            //return subTotal * ((100 + 15M) / 100);
         }
     }
 }
